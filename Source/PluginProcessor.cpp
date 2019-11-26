@@ -112,6 +112,19 @@ DexedAudioProcessor::DexedAudioProcessor() {
     midiMsg = NULL;
 
     clipboardContent = -1;
+
+#ifdef JUCE_HEADLESS_PLUGIN_CLIENT
+    auto cartPath = SystemStats::getEnvironmentVariable ("DEXED_CART_PATH","");
+    Cartridge cart;
+    int rc = cart.load(cartPath);
+
+    if (rc == 0)
+    {
+        this->loadCartridge(cart);
+        this->setCurrentProgram(0);
+        this->activeFileCartridge = cartPath;
+    }
+#endif
 }
 
 DexedAudioProcessor::~DexedAudioProcessor() {

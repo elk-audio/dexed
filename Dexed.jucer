@@ -2,17 +2,18 @@
 
 <JUCERPROJECT id="ryFHHI" name="Dexed" projectType="audioplug" version="1.0.0"
               bundleIdentifier="com.digitalsuburban.Dexed" includeBinaryInAppConfig="1"
-              buildVST="1" buildAU="1" pluginName="Dexed" pluginDesc="Dexed FM Synth"
+              buildVST="1" buildAU="0" pluginName="Dexed" pluginDesc="Dexed FM Synth"
               pluginManufacturer="Digital Suburban" pluginManufacturerCode="DGSB"
               pluginCode="Dexd" pluginChannelConfigs="{0, 2}" pluginIsSynth="1"
               pluginWantsMidiIn="1" pluginProducesMidiOut="1" pluginSilenceInIsSilenceOut="0"
               pluginEditorRequiresKeys="0" pluginAUExportPrefix="DexedAU" pluginRTASCategory=""
-              aaxIdentifier="com.yourcompany.Dexed" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
-              jucerVersion="5.2.1" companyName="Digital Suburban" buildVST3="0"
-              buildRTAS="0" buildAAX="0" pluginManufacturerEmail="support@yourcompany.com"
-              buildAUv3="0" pluginIsMidiEffectPlugin="0" displaySplashScreen="0"
-              reportAppUsage="0" splashScreenColour="Dark" buildStandalone="1"
-              enableIAA="0" cppLanguageStandard="latest" companyCopyright="Digital Suburban">
+              aaxIdentifier="com.yourcompany.Dexed" pluginAAXCategory="2" jucerVersion="5.4.1"
+              companyName="Digital Suburban" buildVST3="0" buildRTAS="0" buildAAX="0"
+              pluginManufacturerEmail="support@yourcompany.com" buildAUv3="0"
+              pluginIsMidiEffectPlugin="0" displaySplashScreen="0" reportAppUsage="0"
+              splashScreenColour="Dark" buildStandalone="0" enableIAA="0" cppLanguageStandard="latest"
+              companyCopyright="Digital Suburban" pluginFormats="buildVST"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn,pluginProducesMidiOut">
   <MAINGROUP id="kHXTgw" name="Dexed">
     <GROUP id="{F12593AE-639A-6F59-5819-ACE25AF86F95}" name="Resources">
       <FILE id="SpSpb4" name="dexedIcon.png" compile="0" resource="1" file="Resources/ui/dexedIcon.png"/>
@@ -124,22 +125,21 @@
                        targetName="Dexed"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_audio_basics" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_core" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_events" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_graphics" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../JUCE-5.2.0/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../JUCE-5.2.0/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
-    <XCODE_MAC targetFolder="Builds/MacOSX" vst3Folder="" smallIcon="SpSpb4"
-               bigIcon="SpSpb4">
+    <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="SpSpb4" bigIcon="SpSpb4">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Dexed"
                        osxCompatibility="10.10 SDK" osxArchitecture="64BitIntel" enablePluginBinaryCopyStep="1"/>
@@ -191,27 +191,27 @@
     </VS2017>
   </EXPORTFORMATS>
   <MODULES>
-    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
             useGlobalPath="1"/>
-    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
-    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
   <JUCEOPTIONS JUCE_QUICKTIME="disabled" JUCE_USE_FLAC="0" JUCE_USE_OGGVORBIS="0"
                JUCE_USE_MP3AUDIOFORMAT="0" JUCE_USE_LAME_AUDIO_FORMAT="0" JUCE_USE_WINDOWS_MEDIA_FORMAT="0"
                JUCE_WEB_BROWSER="0" JUCE_ASIO="0" JUCE_WASAPI="1" JUCE_WASAPI_EXCLUSIVE="0"
                JUCE_DIRECTSOUND="0" JUCE_ALSA="1" JUCE_JACK="0" JUCE_USE_ANDROID_OPENSLES="0"
-               JUCE_PLUGINHOST_VST="1" JUCE_PLUGINHOST_VST3="0" JUCE_PLUGINHOST_AU="1"
                JUCE_USE_CDREADER="0" JUCE_USE_CDBURNER="0" JUCE_DONT_AUTOLINK_TO_WIN32_LIBRARIES="1"/>
   <LIVE_SETTINGS>
     <OSX/>
+    <LINUX/>
   </LIVE_SETTINGS>
 </JUCERPROJECT>
