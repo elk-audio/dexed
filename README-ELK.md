@@ -6,7 +6,7 @@ Modified for headless plugin build for [Elk Audio OS](https://elk.audio)
 
 1. Open `Dexed.jucer` with the projucer.
 2. Enter the path to the VST2 SDK in the field "VST (LEGACY) SDK Folder" in the exporters menu and save to generate the Linux Makefile.
-3. Navigate to the folder `Dexed/Builds/LinuxMakefile/`.
+3. Navigate to the folder `Dexed/Builds/Linux/`.
 4. Set up the cross-compilation toolchain with:  
 
    ```bash
@@ -33,7 +33,7 @@ Modified for headless plugin build for [Elk Audio OS](https://elk.audio)
   ```bash
   $ export DEXED_CART_PATH=/path/to/your/FILE.SYX
   ```
- program changes can be used to change the current sound from the sysex cart.
+  program changes can be used to change the current sound from the sysex cart.
 * Make sure to use our [JUCE fork](https://github.com/stez-mind/JUCE/tree/mind/headless_plugin_client) with the branch `mind/headless_plugin_client`.
 * If the compilation fails with an error similar to:  
 
